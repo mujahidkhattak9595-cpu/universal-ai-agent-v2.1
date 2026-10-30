@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: universal-ai
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - {key: NODE_ENV, value: production}
+      - {key: APP_PASSWORD, sync: false}
+      - {key: GROQ_API_KEY, sync: false}
+      - {key: SUPABASE_URL, sync: false}
+      - {key: SUPABASE_KEY, sync: false}
+      - {key: FB_PAGE_TOKEN, sync: false}
+      - {key: FB_PAGE_ID, sync: false}
+      - {key: SHOPIFY_STORE_URL, sync: false}
+      - {key: SHOPIFY_API_KEY, sync: false}
+      - {key: SHOPIFY_API_SECRET, sync: false}
+      - {key: TIKTOK_APP_KEY, sync: false}
+      - {key: TIKTOK_APP_SECRET, sync: false}
+      - {key: TIKTOK_ACCESS_TOKEN, sync: false}
+      - {key: TIKTOK_SHOP_CIPHER, sync: false}
+      - {key: TIKTOK_WAREHOUSE_ID, sync: false}

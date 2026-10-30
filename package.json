@@ -1,0 +1,23 @@
+{
+  "name": "universal-ai-v2.1-onefile",
+  "version": "2.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "playwright": "^1.40.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.2"
+  },
+  "scripts": {
+    "start": "node backend_server.js",
+    "postinstall": "npx playwright install chromium || echo 'Playwright browser install failed: Daraz/AliExpress search will be unavailable'"
+  }
+}
