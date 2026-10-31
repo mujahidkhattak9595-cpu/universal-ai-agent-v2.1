@@ -16,10 +16,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createClient } from '@supabase/supabase-js';
-// FIX: Render ke liye fallback - Render pe env var missing hone ka fix
-process.env.SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "https://adliukqfkbiqrbbkrveh.supabase.co";
-process.env.SUPABASE_KEY = process.env.SUPABASE_KEY || process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "sb_publishable_5eQ7ZsGA_SEpKm4Bjnin_A_luNTC9AJ";
-process.env.SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_KEY;
 // ===================== LIBRARIES (inlined) =====================
 const P = (() => {
 const RATE = 280;           // PKR per USD (fixed by spec; the real rate varies)
