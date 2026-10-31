@@ -1,6 +1,4 @@
-process.env.SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "https://adliukqfkbiqrbbkrveh.supabase.co";
-process.env.SUPABASE_KEY = process.env.SUPABASE_KEY || process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "sb_publishable_5eQ7ZsGA_SEpKm4Bjnin_A_luNTC9AJ";
-process.env.SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_KEY;
+
 // Universal AI Employee v2.1 - ONE-FILE EDITION.
 // This single file contains the server, all helper libraries and the web app (frontend).
 // Sections: LIBRARIES (inlined) -> SERVER -> EMBEDDED FRONTEND. Needs only package.json next to it.
